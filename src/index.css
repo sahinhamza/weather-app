@@ -5,9 +5,74 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:lightgray;
+  user-select: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.App {
+  max-width: 1000px;
+  background-color: cadetblue;
+  margin: auto;
+  padding-bottom: 50px;
+}
+.select-box {
+  width: 100%;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+select {
+  margin: 10px;
+  height: 25px;
+  cursor: pointer;
+  outline: none;
+}
+.daily-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+.img-description {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px;
+}
+.temp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  margin: 0 15px;
+}
+.wind {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 15px;
+}
+.days {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin: 15px 15px 0px;
+}
+.day {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
